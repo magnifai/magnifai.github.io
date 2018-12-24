@@ -78,13 +78,13 @@ section img {
   height: 100%;
 }
 
-.footer-social-list li {
+.footer-social-list li:not(:first-child) {
   margin-left: 1rem;
 }
 
 .footer-social-list a {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
   height: 20px;
   width: 30px;
@@ -97,6 +97,7 @@ section img {
 
 #testimonial-page img {
   width: 100%;
+  max-width: 250px;
   height: auto;
 }
 

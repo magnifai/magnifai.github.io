@@ -1,3 +1,11 @@
 section:focus {
   outline: none;
 }
+
+#approach-page .content-section {
+  margin-top: 100px;
+}
+
+.visible-mobile {
+  display: none;
+}

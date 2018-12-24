@@ -28,9 +28,9 @@
     // });
 
     /* Slick Nav Acitve */
-    // $(".primary-menu ul").slicknav();
+    $(".primary-menu ul").slicknav();
     $(".slicknav_menu").prepend(
-      '<a href="index.html"><img src="images/logo.png" alt=""></a>'
+      '<a href="index.html" style="font-size: 2em"><span class="primary-color">ai</span></a>'
     );
 
     $(".single-service.box-1").prepend(
