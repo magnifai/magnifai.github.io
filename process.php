@@ -1,7 +1,7 @@
 <?php
 // Configure your Subject Prefix and Recipient here
-$subjectPrefix = 'aSaas HTML Template';
-$emailTo       = 'ashekurrahman1@gmail.com';
+$subjectPrefix = 'Magnifai Inquiry';
+$emailTo       = 'james@magnifai.io';
 $errors = array(); // array to hold validation errors
 $data   = array(); // array to pass back data
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -15,6 +15,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     }else{
         $name = '<strong>Name: </strong>'.$name.'<br />';
     }
+    
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors['email'] = 'Email is invalid.';
     }else{
@@ -26,6 +27,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     }else{
         $phone = '';
     }     
+
     if (empty($message)) {
         $errors['message'] = 'Message is required.';
     }else{
@@ -52,7 +54,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         mail($emailTo, "=?utf-8?B?" . base64_encode($subject) . "?=", $body, $headers);
         
         $data['success'] = true;
-        $data['message'] = 'Congratulations. Your message has been sent successfully';
+        $data['message'] = 'Thanks for them message! Expect to hear from us within a few business days.';
     }
     // return all our data to an AJAX call
     echo json_encode($data);

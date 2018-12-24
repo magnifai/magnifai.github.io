@@ -21,3 +21,7 @@ framework section
 - alternating image location
 
 testimonal section
+
+approachable
+incremental
+measurable
