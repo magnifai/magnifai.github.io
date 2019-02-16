@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109503717-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109503717-1');
+      </script>
+
+  <meta charset="utf-8" />
+  <meta name="description" content="Strategic analytics for small to medium businesses." />
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Title -->
+  <title>The Magnifai Blog</title>
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="apple-touch-icon" href="{{ site.url }}/assets/images/vendor/favicon.png" />
+  <link rel="shortcut icon" type="image/ico" href="{{ site.url }}/assets/images/vendor/favicon.png" />
+  <!-- Plugin-CSS -->
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/bootstrap.min.css" />
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/owl.carousel.min.css" />
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/fontawesome.min.css" />
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/slicknav.css" />
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/magnific-popup.css" />
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/theme.css" />
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/animate.css" />
+  <!-- Main-Stylesheets -->
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/normalize.css" />
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/theme.css" />
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css" />
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/responsive.css" />
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/custom.css" />
+  <script src="{{ site.url }}/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+  <!--[if lt IE 9
+        ]><script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script
+        ><script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
+      ><![endif]-->
+</head>
+
+
+<body data-spy="scroll" data-target=".mainmenu-area">
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
+
+  <!-- Main-Menu-Area -->
+  <nav class="navbar mainmenu-area static" data-spy="affix" data-offset-top="200">
+    <div class="container">
+      <div class="equal-height">
+        <div class="site-branding">
+          <a href="{{ site.url }}/index.html">magnif<span class="primary-color">ai</span></a>
+        </div>
+        <div class="nav-right">
+          <div class="hidden-sm">
+            <a href="{{ site.url }}#contact-page" class="bttn-1 bttn-ppl scroll-link">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main-Menu-Area / -->
+  <header class="site-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="title">Magnif<span class="primary-color">ai</span> Blog</h3>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="blog-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div class="posts-list">
+            {% for blogpost in site.posts %}
+            <div class="post-single">
+              <figure class="post-thumb">
+                <img src="{{ site.url }}/assets/images/post_images/{{ blogpost.header_image }}" alt="{{ blogpost.title }}" />
+              </figure>
+              <div class="post-content">
+                <div class="post-meta">
+                  By
+                  <a class="post-author-link" href="{{ blogpost.author_link }}">{{ blogpost.author_name }}</a>
+                  on {{ blogpost.date | date: "%B %-d, %Y" }}
+                </div>
+                <h3 class="post-title">
+                  <a href="{{ blogpost.post_url }}">{{ blogpost.title }}</a>
+                </h3>
+                <p>
+                  {{ blogpost.description }}
+                </p>
+                <a href="{{ blogpost.url }}" class=" bttn-more">Read More</a>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="space-60 hidden-md hidden-lg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include footer.html %}
+
+  <!--Vendor-JS-->
+  <script src="{{ site.url }}/assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="{{ site.url }}/assets/js/vendor/bootstrap.min.js"></script>
+  <!--Plugin-JS-->
+  <!-- <script src="{{ site.url }}/assets/js/contact-form.js"></script> -->
+  <script src="{{ site.url }}/assets/js/vendor/owl.carousel.min.js"></script>
+  <script src="{{ site.url }}/assets/js/vendor/waypoints.min.js"></script>
+  <script src="{{ site.url }}/assets/js/vendor/jquery.counterup.min.js"></script>
+  <script src="{{ site.url }}/assets/js/vendor/magnific-popup.min.js"></script>
+  <script src="{{ site.url }}/assets/js/vendor/slicknav.min.js"></script>
+  <script src="{{ site.url }}/assets/js/vendor/wow.min.js"></script>
+  <script src="{{ site.url }}/assets/js/vendor/scrollUp.min.js"></script>
+  <script src="{{ site.url }}/assets/js/vendor/moment.js"></script>
+
+  <!--Main-active-JS-->
+  <script src="{{ site.url }}/assets/js/main.js"></script>
+</body>
+
+</html>

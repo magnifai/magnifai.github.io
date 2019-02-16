@@ -1,0 +1,98 @@
+/* primary: #f9ad59 */
+/* primary-dark: #fd9827 */
+
+/* secondary: #729DFE */
+
+section:focus {
+  outline: none;
+}
+
+#approach-page .content-section {
+  margin-top: 100px;
+}
+
+.visible-mobile-only {
+  display: none;
+}
+
+/* blog page */
+.post-meta a {
+  color: #f9ad59;
+}
+
+.bttn-more {
+  color: #95b6fe;
+}
+
+.bttn-more::before {
+  background-color: #95b6fe;
+}
+
+.post-meta {
+  text-align: right;
+}
+
+.post-meta a.post-author-link {
+  margin: 0 !important;
+}
+
+/* .blog-area {
+  padding-top: 5em;
+} */
+
+/* footer */
+.footer .copyright {
+  color: white;
+  text-align: center;
+  font-size: 0.65em;
+  line-height: 1.5;
+}
+
+/* tablet & phone */
+/* this is gross sorry - JM */
+@media only screen and (max-width: 767px) {
+  .header-area {
+    height: 100vh;
+  }
+
+  .header-area>div,
+  .header-area>div>div {
+    height: 100%;
+  }
+
+  .header-area .equal-height {
+    display: block;
+  }
+
+  .header-area .equal-height>div {
+    margin-top: 5em;
+  }
+
+  .header-area .site-branding {
+    margin-top: 2em;
+  }
+
+  .hidden-mobile {
+    display: none !important;
+  }
+
+  .visible-mobile-only {
+    display: block !important;
+  }
+
+  footer .site-branding {
+    text-align: center;
+  }
+
+  footer .footer-social-list {
+    justify-content: center;
+  }
+
+  #home-page {
+    text-align: center;
+  }
+
+  #home-page .site-branding {
+    font-size: 3em;
+  }
+}

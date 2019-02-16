@@ -1,0 +1,8 @@
+name: Magnifai
+google-analytics-code: ""
+
+url: https://magnifai.io
+
+plugins:
+  - "jekyll-github-metadata"
+  - "jekyll-admin"
